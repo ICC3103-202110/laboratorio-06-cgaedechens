@@ -37,14 +37,14 @@ function inputForm(model){
     const message2 = 'Temperature value to convert?'
     return inquirer.prompt([
         {
-            name: 'YesNO',
+            name: 'YesNo',
             type: 'list',
             message: message,
             choices: ['Yes','No'],
 
         },
         {//first input
-            name: 'lvalue',
+            name: 'value',
             type: 'input',
             message: message2,
             default: model.lvalue,
